@@ -11,7 +11,7 @@ export default function Loader({ onComplete }) {
           clearInterval(interval);
           return 100;
         }
-        return prev + 4;
+        return prev + 6;
       });
     }, 60);
 
@@ -21,7 +21,7 @@ export default function Loader({ onComplete }) {
   }, [onComplete]);
 
   useEffect(() => {
-    const timeout = setTimeout(() => onComplete(false), 2000);
+    const timeout = setTimeout(() => onComplete(false), 1500);
 
     return () => {
       clearTimeout(timeout);
@@ -29,10 +29,13 @@ export default function Loader({ onComplete }) {
   }, [onComplete]);
 
   return (
-    <div className="w-screen h-screen flex justify-center items-center ">
+    <div
+      className="w-screen h-dvh flex items-center justify-center overflow-hidden"
+      style={{ backgroundColor: "var(--color-bg)" }}
+    >
       {/* Logo */}
-      <div className=" p-8 ">
-        <div className="text-center font-stretch-expanded font-bold text-4xl tracking-tight">
+      <div className="p-8 ">
+        <div className="text-center font-stretch-expanded font-bold text-2xl md:text-4xl tracking-tight">
           JA<span style={{ color: "var(--color-dark-accent)" }}>.</span>
         </div>
 
