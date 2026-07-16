@@ -2,7 +2,7 @@
 
 @import "tailwindcss";
 
-:root {
+/* :root {
   --color-bg: #f7f5f2;
   --color-bg-soft: #0f0f0f;
   --color-surface: #111111;
@@ -16,4 +16,60 @@
   --font-display: "Syne", sans-serif;
   --font-body: "DM Sans", sans-serif;
   --font-mono: "JetBrains Mono", monospace;
+} */
+@theme {
+  --color-bg: #f7f5f2;
+  --color-bg-soft: #0f0f0f;
+  --color-surface: #111111;
+  --color-border: #222222;
+  --color-accent: #10b981;
+  --color-dark-accent: #0d7653;
+  --color-accent-glow: #34d399;
+  --color-text: #ffffff;
+  --color-text-dim: #9ca3af;
+  --color-muted: #6b7280;
+  --font-display: "Syne", sans-serif;
+  --font-body: "DM Sans", sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+}
+
+@layer base {
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    scrollbar-color: var(--color-accent) var(--color-surface);
+    scrollbar-width: thin;
+  }
+
+  html::-webkit-scrollbar {
+    width: 4px;
+  }
+
+  html::-webkit-scrollbar-track {
+    background: var(--color-surface);
+  }
+
+  html::-webkit-scrollbar-thumb {
+    border-radius: 2px;
+    background: var(--color-accent);
+  }
+
+  body {
+    overflow-x: hidden;
+    background: var(--color-bg);
+    /* color: var(--color-text); */
+    font-family: "DM Sans", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  ::selection {
+    background: var(--color-accent);
+    color: var(--color-bg);
+  }
 }

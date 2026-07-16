@@ -29,14 +29,11 @@ export default function Loader({ onComplete }) {
   }, [onComplete]);
 
   return (
-    <div
-      className="w-screen h-dvh flex items-center justify-center overflow-hidden"
-      style={{ backgroundColor: "var(--color-bg)" }}
-    >
+    <div className="w-screen h-dvh flex items-center justify-center overflow-hidden bg-bg">
       {/* Logo */}
       <div className="p-8 ">
-        <div className="text-center font-stretch-expanded font-bold text-2xl md:text-4xl tracking-tight">
-          JA<span style={{ color: "var(--color-dark-accent)" }}>.</span>
+        <div className="text-center font-display font-bold text-2xl md:text-4xl tracking-tight">
+          JA<span className="text-dark-accent">.</span>
         </div>
 
         {/* Progress bar */}
@@ -63,10 +60,7 @@ export default function Loader({ onComplete }) {
         </div>
 
         {/* tagline */}
-        <div
-          className="font-body text-center  text-xs text-muted mt-4 tracking-widest uppercase"
-          style={{ fontFamily: "var(--font-display)" }}
-        >
+        <div className="font-display text-center  text-xs text-muted mt-4 tracking-widest uppercase">
           Front End Developer
         </div>
       </div>

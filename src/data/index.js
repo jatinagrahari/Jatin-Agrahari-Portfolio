@@ -28,6 +28,29 @@ export const siteConfig = {
   ],
 };
 
+export const navLinks = [
+  {
+    label: "Home",
+    path: "/",
+  },
+  {
+    label: "About",
+    path: "/about",
+  },
+  {
+    label: "Experience",
+    path: "/experience",
+  },
+  {
+    label: "Projects",
+    path: "/projects",
+  },
+  {
+    label: "Contact",
+    path: "/contact",
+  },
+];
+
 // export const EMAIL_CONFIG = {
 //   serviceId: import.meta.env.VITE_EMAILJS_SERVICE_ID ?? "",
 //   templateId: import.meta.env.VITE_EMAILJS_TEMPLATE_ID ?? "",
