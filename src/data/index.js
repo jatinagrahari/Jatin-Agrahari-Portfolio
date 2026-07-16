@@ -57,15 +57,17 @@ export const navLinks = [
 //   publicKey: import.meta.env.VITE_EMAILJS_PUBLIC_KEY ?? "",
 // };
 
-export const FOOTER_STACK = [
-  "HubSpot",
-  "Airtable",
-  "GoHighLevel",
-  "Twilio",
-  "OpenAI",
-  "Make.com",
-  "n8n",
-  "Zapier",
-  "Zoho CRM",
-  "REST APIs",
+export const footerStack = [
+  "HTML",
+  "CSS",
+  "JavaScript",
+  "React.js",
+  "React Router",
+  "Tailwind",
+  "Motion",
+  "Git",
+  "Vite",
+  "UI/UX",
+  "Redux",
+  "Node.js",
 ];

@@ -9,11 +9,11 @@ const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <div className="sticky top-0 z-50 bg-bg py-4 md:py-0 glass">
+    <div className="sticky top-0 z-50  py-4 md:py-0 glass">
       {/* Desktop nav */}
-      <div className="flex justify-between items-center max-w-7xl mx-auto px-6">
+      <div className="flex justify-between items-center max-w-7xl mx-auto px-6 ">
         <div className="">
-          <div className="font-display font-bold text-2xl md:text-4xl tracking-tight">
+          <div className="font-display font-bold text-2xl md:text-4xl tracking-tight text-">
             JA<span className="text-dark-accent">.</span>
           </div>
         </div>
@@ -23,7 +23,7 @@ const Navbar = () => {
               key={link.path}
               to={link.path}
               className={({ isActive }) =>
-                `font-body text-sm transition-colors duration-200 ${
+                `font-body text-md transition-colors duration-200 ${
                   isActive
                     ? "text-dark-accent"
                     : "text-text-dim hover:text-bg-soft"
