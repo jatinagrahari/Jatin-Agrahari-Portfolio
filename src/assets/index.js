@@ -10,7 +10,7 @@ import mongodbLogo from "./mongodb.png";
 import nodejsLogo from "./nodejs.png";
 import reduxLogo from "./redux.png";
 
-export default {
+export {
   htmlLogo,
   cssLogo,
   jsLogo,

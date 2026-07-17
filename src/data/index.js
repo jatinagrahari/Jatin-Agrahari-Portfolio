@@ -21,7 +21,7 @@ import {
   mongodbLogo,
   nodejsLogo,
   reduxLogo,
-} from "../assets";
+} from "../assets/index";
 
 export const siteConfig = {
   owner: "Jatin Agrahari",
@@ -165,14 +165,14 @@ export const expertise = [
 ];
 
 export const Tech = [
-  { name: "html", path: { htmlLogo } },
-  { name: "css", path: { cssLogo } },
-  { name: "js", path: { jsLogo } },
-  { name: "react", path: { reactLogo } },
-  { name: "git", path: { gitLogo } },
-  { name: "firebase", path: { firebaseLogo } },
-  { name: "framer", path: { framerLogo } },
-  { name: "nodejs", path: { nodejsLogo } },
-  { name: "redux", path: { reduxLogo } },
-  { name: "mongodb", path: { mongodbLogo } },
+  { name: "html", path: htmlLogo },
+  { name: "css", path: cssLogo },
+  { name: "js", path: jsLogo },
+  { name: "react", path: reactLogo },
+  { name: "git", path: gitLogo },
+  { name: "firebase", path: firebaseLogo },
+  { name: "framer", path: framerLogo },
+  { name: "nodejs", path: nodejsLogo },
+  { name: "redux", path: reduxLogo },
+  { name: "mongodb", path: mongodbLogo },
 ];

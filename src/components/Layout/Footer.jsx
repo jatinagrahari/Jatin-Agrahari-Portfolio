@@ -68,7 +68,7 @@ const Footer = () => {
         {/* Bottom bar */}
         <div className="mt-12 pt-6 border-t border-border/50 flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="font-body text-xs text-muted">
-            © {year} Jatin Agrahari. All rights reserved.
+            © {year} {siteConfig.owner}. All rights reserved.
           </p>
           <a
             href={`mailto:${siteConfig.email}`}

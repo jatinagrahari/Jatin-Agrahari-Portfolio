@@ -52,7 +52,7 @@ const TechStack = () => {
                   style={{ boxShadow: "0 2px 8px rgba(0,0,0,0.05)" }}
                 >
                   <img
-                    src={tool.logo}
+                    src={tool.path}
                     alt={tool.name}
                     className="w-full h-full object-contain opacity-80 group-hover:opacity-100 transition-all duration-300"
                   />
