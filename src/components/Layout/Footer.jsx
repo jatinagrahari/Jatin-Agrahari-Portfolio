@@ -16,7 +16,7 @@ const Footer = () => {
               JA<span className="text-dark-accent">.</span>
             </div>
             <div className="font-body text-text-dim text-sm leading-relaxed max-w-xs">
-              {siteConfig.description}
+              {siteConfig.footerDescription}
             </div>
             <div className="flex items-center gap-4 mt-2">
               {siteConfig.socialLinks.map((link) => (

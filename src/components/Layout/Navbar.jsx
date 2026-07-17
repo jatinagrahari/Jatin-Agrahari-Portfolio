@@ -23,10 +23,8 @@ const Navbar = () => {
               key={link.path}
               to={link.path}
               className={({ isActive }) =>
-                `font-body text-md transition-colors duration-200 ${
-                  isActive
-                    ? "text-dark-accent"
-                    : "text-text-dim hover:text-bg-soft"
+                `font-body text-sm transition-colors duration-200 ${
+                  isActive ? "text-dark-accent" : "text-nav hover:text-bg-soft"
                 }`
               }
             >
@@ -35,7 +33,7 @@ const Navbar = () => {
           ))}
         </div>
         <div className="hidden md:flex">
-          <Button children={"Let's Talk"} />
+          <Button children={"Let's Talk"} type={"primary"} />
         </div>
 
         {/* Mobile nav  */}
