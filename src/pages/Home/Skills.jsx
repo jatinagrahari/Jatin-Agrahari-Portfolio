@@ -78,7 +78,7 @@ const Skills = () => {
                 </h3>
 
                 {/* Description */}
-                <p className="font-body text-sm text-nav leading-7 text-text-dim flex-grow">
+                <p className="font-body text-sm text-nav leading-7 text-nav flex-grow">
                   {skill.description}
                 </p>
 

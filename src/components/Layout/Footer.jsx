@@ -15,7 +15,7 @@ const Footer = () => {
             <div className="font-display font-bold text-2xl md:text-4xl tracking-tight">
               JA<span className="text-dark-accent">.</span>
             </div>
-            <div className="font-body text-text-dim text-sm leading-relaxed max-w-xs">
+            <div className="font-body text-nav text-sm leading-relaxed max-w-xs">
               {siteConfig.footerDescription}
             </div>
             <div className="flex items-center gap-4 mt-2">
@@ -24,7 +24,7 @@ const Footer = () => {
                   key={link.label}
                   target="_blank"
                   href={link.href}
-                  className="text-text-dim hover:text-accent transition-colors text-sm"
+                  className="text-nav hover:text-dark-accent transition-colors text-sm"
                 >
                   {link.label}
                 </a>
@@ -41,7 +41,7 @@ const Footer = () => {
               <NavLink
                 key={link.path}
                 to={link.path}
-                className="font-body text-sm text-text-dim hover:text-text transition-colors"
+                className="font-body text-sm text-nav hover:text-dark-accent transition-colors"
               >
                 {link.label}
               </NavLink>
@@ -57,7 +57,7 @@ const Footer = () => {
               {footerStack.map((tag) => (
                 <span
                   key={tag}
-                  className="text-xs font-mono px-2 py-1 rounded border border-border text-text-dim"
+                  className="text-xs font-mono px-2 py-1 rounded border border-border/30 text-nav"
                 >
                   {tag}
                 </span>
@@ -72,7 +72,7 @@ const Footer = () => {
           </p>
           <a
             href={`mailto:${siteConfig.email}`}
-            className="font-mono text-xs text-accent hover:text-accent-glow transition-colors"
+            className="font-mono text-xs text-dark-accent hover:text-accent-glow transition-colors"
           >
             {siteConfig.email}
           </a>

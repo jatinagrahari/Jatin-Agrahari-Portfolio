@@ -10,6 +10,19 @@ import {
   Wrench,
 } from "lucide-react";
 
+import {
+  htmlLogo,
+  cssLogo,
+  jsLogo,
+  reactLogo,
+  gitLogo,
+  firebaseLogo,
+  framerLogo,
+  mongodbLogo,
+  nodejsLogo,
+  reduxLogo,
+} from "../assets";
+
 export const siteConfig = {
   owner: "Jatin Agrahari",
   alias: "JJ",
@@ -149,4 +162,17 @@ export const expertise = [
       "Integrating authentication, cloud databases, storage, and backend services to build complete web applications.",
     tags: ["Firebase", "Appwrite", "Authentication", "Firestore"],
   },
+];
+
+export const Tech = [
+  { name: "html", path: { htmlLogo } },
+  { name: "css", path: { cssLogo } },
+  { name: "js", path: { jsLogo } },
+  { name: "react", path: { reactLogo } },
+  { name: "git", path: { gitLogo } },
+  { name: "firebase", path: { firebaseLogo } },
+  { name: "framer", path: { framerLogo } },
+  { name: "nodejs", path: { nodejsLogo } },
+  { name: "redux", path: { reduxLogo } },
+  { name: "mongodb", path: { mongodbLogo } },
 ];
