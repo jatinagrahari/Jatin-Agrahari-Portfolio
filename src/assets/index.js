@@ -9,6 +9,7 @@ import framerLogo from "./framer.png";
 import mongodbLogo from "./mongodb.png";
 import nodejsLogo from "./nodejs.png";
 import reduxLogo from "./redux.png";
+import blob from "./blob.svg";
 
 export {
   htmlLogo,
