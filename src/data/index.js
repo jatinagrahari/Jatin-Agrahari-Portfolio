@@ -8,7 +8,10 @@ import {
   ShieldCheck,
   Database,
   Wrench,
+  Mail,
 } from "lucide-react";
+
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 import {
   htmlLogo,
@@ -176,3 +179,29 @@ export const Tech = [
   { name: "redux", path: reduxLogo },
   { name: "mongodb", path: mongodbLogo },
 ];
+
+export const contactInfo = {
+  title: "Get In Touch",
+  description:
+    "I'm always open to discussing software development, new opportunities, or interesting ideas. Feel free to reach out if you'd like to connect.",
+  socialLinks: [
+    {
+      icon: Mail,
+      label: "Email",
+      href: "mailto:hello@jatinagrahari.com",
+      text: "Send me an email anytime",
+    },
+    {
+      icon: FaLinkedin,
+      label: "LinkedIn",
+      href: "https://www.linkedin.com/in/jatinagrahari/",
+      text: "Let's connect professionally",
+    },
+    {
+      icon: FaGithub,
+      label: "GitHub",
+      href: "https://github.com/jatinagrahari",
+      text: "Check out my repositories",
+    },
+  ],
+};

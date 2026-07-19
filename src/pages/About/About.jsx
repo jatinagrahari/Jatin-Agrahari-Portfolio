@@ -14,7 +14,7 @@ import {
 
 const About = () => {
   return (
-    <div className="container mx-auto px-6 pt-4 pb-20 lg:pt-16 lg:pb-24">
+    <div className="container mx-auto px-6 pt-4">
       <div className="">
         {/* Hero Section */}
         <div className="grid grid-cols-1 lg:grid-cols-2 items-center gap-16">
