@@ -10,6 +10,7 @@ import Layout from "./components/Layout/Layout";
 import Loader from "./components/Ui/Loader";
 import { Home, About, Contact, Experience, Projects } from "./pages";
 import { useState } from "react";
+import { Toaster } from "react-hot-toast";
 
 function App() {
   const [isLoading, setisLoading] = useState(true);
@@ -33,6 +34,19 @@ function App() {
       ) : (
         <RouterProvider router={router} />
       )}
+      <Toaster
+        position="top-center"
+        toastOptions={{
+          duration: 3000,
+          style: {
+            background: "#111827",
+            color: "#fff",
+            padding: "16px 20px",
+            borderRadius: "12px",
+            fontSize: "15px",
+          },
+        }}
+      />
     </>
   );
 }

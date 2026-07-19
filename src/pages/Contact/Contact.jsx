@@ -4,16 +4,50 @@ import { NavLink } from "react-router-dom";
 import { User, Mail, Tag, MessageSquare } from "lucide-react";
 import ContactSvg from "../../assets/Contactus.svg";
 import Button from "../../components/Ui/Button";
+import emailjs from "@emailjs/browser";
+import { useState } from "react";
+import { sendEmail } from "../../utils/sendEmail";
+import toast from "react-hot-toast";
 
 const Contact = () => {
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    subject: "",
+    message: "",
+  });
+
+  function handleChange(e) {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  }
+
+  async function handleSubmit(e) {
+    e.preventDefault();
+    try {
+      const response = await sendEmail(formData);
+
+      toast.success("Message sent successfully!");
+      setFormData({
+        name: "",
+        email: "",
+        subject: "",
+        message: "",
+      });
+      console.log("Reset requested");
+    } catch (error) {
+      console.error(error);
+      toast.error("Failed to send message. Please try again.");
+    }
+  }
+
   return (
     <div className="container mx-auto px-6 pt-4">
       <div className="grid lg:grid-cols-2 gap-12 items-center pb-10">
         {/* hero section */}
         {/* left section */}
-        <div className="    flex flex-col justify-center py-10 lg:py-20 gap-10">
+        <div className="    flex flex-col justify-center py-10 gap-5 lg:gap-10">
           <div className="">
-            <h2 className="text-2xl lg:text-3xl font-display text-dark-accent mb-4">
+            <h2 className="text-xl md:text-2xl lg:text-3xl font-display text-dark-accent mb-2 lg:mb-4">
               {contactInfo.title}
             </h2>
             <p className="text-lg font body text-nav">
@@ -32,7 +66,11 @@ const Contact = () => {
 
         {/* right section */}
         <div className="">
-          <img src={ContactSvg} alt="" />
+          <img
+            src={ContactSvg}
+            alt=""
+            className="w-full max-w-sm lg:max-w-md xl:max-w-lg mx-auto"
+          />
         </div>
       </div>
 
@@ -49,7 +87,7 @@ const Contact = () => {
           </div>
 
           {/* form */}
-          <form className="space-y-4 sm:space-y-5">
+          <form onSubmit={handleSubmit} className="space-y-4 sm:space-y-5">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-5">
               {/* Name */}
               <div className="relative">
@@ -61,6 +99,9 @@ const Contact = () => {
                 <input
                   type="text"
                   placeholder="Your Name"
+                  name="name"
+                  value={formData.name}
+                  onChange={handleChange}
                   className="w-full h-12 sm:h-14 rounded-xl border border-gray-200 bg-white pl-11 pr-4 text-sm sm:text-base outline-none transition-all duration-300 focus:border-green-600 focus:ring-4 focus:ring-green-100"
                 />
               </div>
@@ -74,6 +115,9 @@ const Contact = () => {
 
                 <input
                   type="email"
+                  name="email"
+                  value={formData.email}
+                  onChange={handleChange}
                   placeholder="Your Email"
                   className="w-full h-12 sm:h-14 rounded-xl border border-gray-200 bg-white pl-11 pr-4 text-sm sm:text-base outline-none transition-all duration-300 focus:border-green-600 focus:ring-4 focus:ring-green-100"
                 />
@@ -89,7 +133,10 @@ const Contact = () => {
 
               <input
                 type="text"
+                name="subject"
+                value={formData.subject}
                 placeholder="Subject"
+                onChange={handleChange}
                 className="w-full h-12 sm:h-14 rounded-xl border border-gray-200 bg-white pl-11 pr-4 text-sm sm:text-base outline-none transition-all duration-300 focus:border-green-600 focus:ring-4 focus:ring-green-100"
               />
             </div>
@@ -103,6 +150,9 @@ const Contact = () => {
 
               <textarea
                 rows={6}
+                name="message"
+                value={formData.message}
+                onChange={handleChange}
                 placeholder="Your Message"
                 className="w-full min-h-[180px] sm:min-h-[220px] rounded-xl border border-gray-200 bg-white pl-11 pr-4 pt-4 text-sm sm:text-base outline-none resize-none transition-all duration-300 focus:border-green-600 focus:ring-4 focus:ring-green-100"
               />
