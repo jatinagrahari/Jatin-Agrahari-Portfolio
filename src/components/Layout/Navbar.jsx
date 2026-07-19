@@ -4,6 +4,7 @@ import { navLinks } from "../../data";
 import Button from "../Ui/Button";
 import { Menu, X } from "lucide-react";
 import { motion } from "motion/react";
+import { siteConfig } from "../../data";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -33,7 +34,7 @@ const Navbar = () => {
           ))}
         </div>
         <div className="hidden md:flex">
-          <Button children={"Let's Talk"} type={"primary"} />
+          <Button children={siteConfig.ctaLabel} type={"primary"} />
         </div>
 
         {/* Mobile nav  */}
@@ -82,6 +83,7 @@ const Navbar = () => {
               <NavLink
                 key={link.path}
                 to={link.path}
+                onClick={() => setIsMenuOpen(false)}
                 className={({ isActive }) =>
                   `font-body text-md transition-colors duration-200 ${
                     isActive
@@ -94,7 +96,7 @@ const Navbar = () => {
               </NavLink>
             ))}
 
-            <Button children={"Let's Talk"} />
+            <Button children={siteConfig.ctaLabel} />
           </motion.div>
         ) : null}
       </div>

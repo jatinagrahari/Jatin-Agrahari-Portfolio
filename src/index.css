@@ -12,7 +12,7 @@
   --color-accent-glow: #34d399;
   --color-text: #ffffff;
   /* --color-text-dim: #555560; */
-/* --color-nav: #555560;
+/*--color-nav: #555560;
   --color-text-dark: #2f3031;
   --color-muted: #6b7280;
   --font-display: "Syne", sans-serif;
@@ -47,7 +47,7 @@
 
   html {
     scroll-behavior: smooth;
-    scrollbar-color: var(--color-accent) var(--color-surface);
+    scrollbar-color: var(--color-dark-accent) var(--color-surface);
     scrollbar-width: thin;
   }
 
