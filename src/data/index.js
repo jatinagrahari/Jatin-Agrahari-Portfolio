@@ -9,6 +9,9 @@ import {
   Database,
   Wrench,
   Mail,
+  Code2,
+  BriefcaseBusiness,
+  Rocket,
 } from "lucide-react";
 
 import { FaGithub, FaLinkedin } from "react-icons/fa";
@@ -309,5 +312,29 @@ export const ExperienceData = [
       "Database Management",
       "Git",
     ],
+  },
+];
+
+export const ExperienceCards = [
+  {
+    icon: Code2,
+    title: "Web Development Journey",
+    description:
+      "My journey into web development started with HTML and CSS and gradually evolved into building modern React applications. Along the way, I explored JavaScript, state management, API integration, backend fundamentals, and databases. Every project introduced new challenges and strengthened both my technical skills and problem-solving approach.",
+    stack: ["HTML5", "CSS3", "JavaScript", "React", "Node.js"],
+  },
+  {
+    icon: BriefcaseBusiness,
+    title: "Internship Experience",
+    description:
+      "During my internship at Neuron.ai, I contributed to ResumeHub Builder, a full-stack web application for creating and managing professional resumes. I developed React components, implemented backend logic with Node.js, integrated REST APIs, worked with Firebase, and collaborated with the team to deliver production-ready features.",
+    stack: ["React", "Node.js", "REST APIs", "Firebase", "Git"],
+  },
+  {
+    icon: Rocket,
+    title: "Independent Projects",
+    description:
+      "Outside my internship, I continue building independent projects to apply new concepts and improve my development workflow. These projects have helped me strengthen my understanding of frontend architecture, responsive design, API integration, and full-stack application development while writing cleaner, more maintainable code.",
+    stack: ["React", "Tailwind CSS", "MongoDB", "Express.js", "GitHub"],
   },
 ];

@@ -1,10 +1,13 @@
 import React from "react";
-import { ExperienceData } from "../../data";
+import { ExperienceData, ExperienceCards } from "../../data";
+import TechStack from "../Home/TechStack";
 
 const Experience = () => {
   return (
     <div>
       <div className="">
+        {/* hero section */}
+
         <section className="w-full py-20 px-6 bg-bg-dark">
           <div className="max-w-7xl mx-auto">
             <div>
@@ -151,6 +154,73 @@ const Experience = () => {
           </div>
         </section>
         <div className="w-full h-px bg-border/30"></div>
+
+        <section className="w-full py-20 px-6 bg-bg-dark">
+          <div className="max-w-7xl mx-auto">
+            <div className="pb-16">
+              <p className="text-xs font-semibold tracking-widest text-dark-accent uppercase mb-3 block">
+                Beyond the Resume
+              </p>
+              <h2 className="text-4xl md:text-5xl font-bold text-surface font-display">
+                The Experience Behind <br />{" "}
+                <span className="text-dark-accent"> the Code</span>
+              </h2>
+              <p className="text-nav mt-4 text-sm">
+                Every project, internship, and milestone has shaped my growth as
+                a developer and the way I build software.
+              </p>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8">
+              {ExperienceCards.map((card) => {
+                const Icon = card.icon;
+
+                return (
+                  <div
+                    key={card.title}
+                    className="bg-white/30 group glass rounded-2xl border border-border p-8 flex flex-col transition-all duration-300 hover:-translate-y-2 hover:border-dark-accent/50 hover:shadow-[0_0_35px_rgba(34,197,94,0.08)]"
+                  >
+                    {/* Header */}
+                    <div className="flex items-center gap-4 mb-6">
+                      <div className="w-12 h-12 rounded-xl bg-accent/10 flex items-center justify-center border border-accent/20">
+                        <Icon className="w-6 h-6 text-accent" />
+                      </div>
+
+                      <h3 className="text-xl font-display font-semibold text-surrounded">
+                        {card.title}
+                      </h3>
+                    </div>
+
+                    {/* Description */}
+                    <p className="text-nav leading-7 text-sm lg:text-md flex-1">
+                      {card.description}
+                    </p>
+
+                    {/* Divider */}
+                    <div className="w-full h-px bg-border/30 my-6" />
+
+                    {/* Tech Stack */}
+                    <div className="flex flex-wrap gap-2">
+                      {card.stack.map((tech) => (
+                        <span
+                          key={tech}
+                          className="px-3 py-1 rounded-full border border-border/30 bg-bg text-sm text-text-dim transition-colors duration-300 hover:border-accent hover:text-accent"
+                        >
+                          {tech}
+                        </span>
+                      ))}
+                    </div>
+                  </div>
+                );
+              })}
+            </div>
+          </div>
+        </section>
+        <div className="w-full h-px bg-border/30 "></div>
+        {/* tech stack section  */}
+        <div className="pt-20">
+          <TechStack />
+        </div>
       </div>
     </div>
   );

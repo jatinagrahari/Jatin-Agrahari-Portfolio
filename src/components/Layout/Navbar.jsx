@@ -95,8 +95,13 @@ const Navbar = () => {
                 {link.label}
               </NavLink>
             ))}
-
-            <Button children={siteConfig.ctaLabel} />
+            <NavLink
+              key={"/contact"}
+              to={"/contact"}
+              onClick={() => setIsMenuOpen(false)}
+            >
+              <Button children={siteConfig.ctaLabel} type={"primary"} />
+            </NavLink>
           </motion.div>
         ) : null}
       </div>
