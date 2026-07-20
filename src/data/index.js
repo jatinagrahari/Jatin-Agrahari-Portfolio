@@ -260,3 +260,54 @@ export const Quotes = [
     author: "C. A. R. Hoare",
   },
 ];
+
+export const ExperienceData = [
+  {
+    role: "Independent Developer",
+    company: "Personal Projects & Self-Learning",
+    type: "self",
+    period: "2024 — Present",
+    bullets: [
+      "Designed and developed responsive web applications using React and modern JavaScript.",
+      "Built reusable UI components with a focus on clean architecture and maintainable code.",
+      "Integrated REST APIs and implemented dynamic data-driven user interfaces.",
+      "Created full-stack applications while continuously exploring backend development with Node.js and MongoDB.",
+    ],
+    summary:
+      "Building modern web applications through personal projects and continuous learning. Focused on creating responsive user interfaces, reusable component architectures, API integrations, and full-stack development while improving software engineering practices through real-world implementations.",
+    stack: [
+      "React",
+      "JavaScript",
+      "Tailwind CSS",
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "REST APIs",
+      "Git",
+      "GitHub",
+      "Vite",
+    ],
+  },
+  {
+    role: "Full Stack Engineer Intern",
+    company: "Neuron.ai",
+    type: "company",
+    period: "Dec 2022 — Feb 2023",
+    bullets: [
+      "Built frontend components using React.js with dynamic data handling.",
+      "Developed backend logic with Node.js and integrated REST APIs.",
+      "Worked with database operations including data creation, retrieval, and validation.",
+      "Implemented secure data handling and assisted in deployment and maintenance.",
+    ],
+    summary:
+      "Contributed to the development of ResumeHub Builder — a full-stack web application for creating, managing, and organizing professional resumes. Built frontend components in React, developed backend logic with Node.js, integrated REST APIs, and worked with database operations including data creation, retrieval, and validation. Implemented secure data handling and assisted in deployment and maintenance.",
+    stack: [
+      "React.js",
+      "Node.js",
+      "REST APIs",
+      "Firebase",
+      "Database Management",
+      "Git",
+    ],
+  },
+];
