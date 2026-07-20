@@ -125,4 +125,57 @@ export const myTags = [
   },
 ];
 
+export const Skills = [
+  {
+    category: "Frontend",
+    items: [
+      "React",
+      "JavaScript",
+      "TypeScript",
+      "HTML5",
+      "CSS3",
+      "Tailwind CSS",
+      "Bootstrap",
+      "Responsive Design",
+    ],
+  },
+  {
+    category: "State Management",
+    items: ["Zustand", "Redux Toolkit", "Context API"],
+  },
+  {
+    category: "Backend",
+    items: ["Node.js", "Express.js", "REST APIs"],
+  },
+  {
+    category: "Databases",
+    items: ["MongoDB", "Firebase"],
+  },
+  {
+    category: "Development Tools",
+    items: ["Git", "GitHub", "VS Code", "Postman", "npm", "Vite"],
+  },
+  {
+    category: "Deployment",
+    items: ["Netlify", "Vercel", "GitHub Pages"],
+  },
+  {
+    category: "Testing & Debugging",
+    items: [
+      "Chrome DevTools",
+      "React DevTools",
+      "API Testing",
+      "Responsive Testing",
+    ],
+  },
+  {
+    category: "UI & Design",
+    items: ["Figma", "Framer Motion", "Lucide React", "CSS Animations"],
+  },
+  {
+    category: "Currently Learning",
+    items: ["Next.js", "Docker", "AWS", "CI/CD"],
+  },
+];
+
 export { Blob, Dot, JJ };

@@ -183,25 +183,80 @@ export const Tech = [
 export const contactInfo = {
   title: "Get In Touch",
   description:
-    "I'm always open to discussing software development, new opportunities, or interesting ideas. Feel free to reach out if you'd like to connect.",
+    "I'm always open to interesting ideas, exciting projects, and meeting new people in tech.",
+  descriptionTags: [
+    "✓ Work opportunities",
+    "✓ Collaboration ideas",
+    "✓ General questions",
+  ],
   socialLinks: [
     {
       icon: Mail,
       label: "Email",
+      value: "hello@jatinagrahari.com",
       href: "mailto:hello@jatinagrahari.com",
       text: "Send me an email anytime",
     },
     {
       icon: FaLinkedin,
       label: "LinkedIn",
-      href: "https://www.linkedin.com/in/jatinagrahari/",
+      value: "linkedin.com/jatinagrahari/",
+      href: "linkedin.com/in/jatinagrahari/",
       text: "Let's connect professionally",
     },
     {
       icon: FaGithub,
       label: "GitHub",
-      href: "https://github.com/jatinagrahari",
+      value: "github.com/jatinagrahari",
+      href: "github.com/jatinagrahari",
       text: "Check out my repositories",
     },
   ],
 };
+
+export const Quotes = [
+  {
+    quote:
+      "Programs must be written for people to read, and only incidentally for machines to execute.",
+    author: "Harold Abelson",
+  },
+  {
+    quote:
+      "Any fool can write code that a computer can understand. Good programmers write code that humans can understand.",
+    author: "Martin Fowler",
+  },
+  {
+    quote: "First, solve the problem. Then, write the code.",
+    author: "John Johnson",
+  },
+  {
+    quote: "Make it work. Make it right. Make it fast.",
+    author: "Kent Beck",
+  },
+  {
+    quote: "Code is like humor. When you have to explain it, it's bad.",
+    author: "Cory House",
+  },
+  {
+    quote: "Simplicity is the soul of efficiency.",
+    author: "Austin Freeman",
+  },
+  {
+    quote: "Before software can be reusable, it first has to be usable.",
+    author: "Ralph Johnson",
+  },
+  {
+    quote: "The best error message is the one that never shows up.",
+    author: "Thomas Fuchs",
+  },
+  {
+    quote:
+      "Walking on water and developing software from a specification are easy if both are frozen.",
+    author: "Edward V. Berard",
+  },
+  {
+    quote:
+      "The most important property of a program is whether it accomplishes the intention of its user.",
+    author: "C. A. R. Hoare",
+  },
+];

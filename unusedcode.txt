@@ -1,0 +1,154 @@
+about page >
+/*******************************************
+{/* Education & Learning Journey */}
+        <section className="w-full pt-12 pb-20 px-6 ">
+          <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-[35%_65%] gap-16 lg:gap-12 py-16 lg:py-24">
+            {/* Left Section — Education (35%) */}
+            <div>
+              <div className="mb-8 lg:mb-10">
+                <h2 className="text-2xl sm:text-3xl font-bold font-display">
+                  Education
+                </h2>
+                <div className="w-16 h-1 bg-accent rounded-full mt-3"></div>
+              </div>
+
+              <div className="space-y-5">
+                {education.map((edu) => {
+                  const Icon = GraduationCap;
+                  return (
+                    <div
+                      key={edu.degree}
+                      className="rounded-2xl border border-border/10 bg-white p-5 sm:p-6 shadow-sm hover:shadow-lg transition-all duration-300"
+                    >
+                      <div className="w-11 h-11 sm:w-12 sm:h-12 rounded-full border border-border/5 bg-accent/5 flex items-center justify-center mb-4">
+                        <Icon className="w-5 h-5 text-dark-accent" />
+                      </div>
+                      <h3 className="text-lg sm:text-xl font-semibold leading-snug">
+                        {edu.degree}
+                      </h3>
+                      <p className="text-nav text-sm sm:text-base mt-1.5">
+                        {edu.schoolName}
+                      </p>
+                    </div>
+                  );
+                })}
+              </div>
+            </div>
+
+            {/* Right Section — Learning Journey (65%) */}
+            <div>
+              <h2 className="text-2xl sm:text-3xl font-bold font-display">
+                Learning Journey
+              </h2>
+              <div className="w-16 h-1 bg-accent rounded-full mt-3 mb-8 lg:mb-10"></div>
+
+              {/* Mobile: vertical stacked timeline */}
+              <div className=" flex flex-col gap-8 sm:hidden ">
+                {learningJourney.map((value) => {
+                  const Icon = value.icon;
+                  return (
+                    <div key={value.title} className="flex items-center gap-4">
+                      <div className="w-14 h-14 shrink-0 rounded-full border border-border/10 bg-white shadow-sm flex items-center justify-center">
+                        <Icon className="w-6 h-6 text-muted" />
+                      </div>
+                      <div>
+                        <p className="text-dark-accent font-semibold text-base">
+                          {value.year}
+                        </p>
+                        <p className="text-nav text-sm leading-6">
+                          {value.title}
+                        </p>
+                      </div>
+                    </div>
+                  );
+                })}
+              </div>
+
+              {/* sm and up: horizontal timeline */}
+              <div className="hidden sm:block relative mt-8 lg:mt-12">
+                <div
+                  className="absolute top-10 lg:top-12 h-0.5 bg-accent/50"
+                  style={{
+                    left: `${100 / (2 * learningJourney.length)}%`,
+                    right: `${100 / (2 * learningJourney.length)}%`,
+                  }}
+                ></div>
+
+                <div className=" flex justify-between">
+                  {learningJourney.map((value) => {
+                    const Icon = value.icon;
+                    return (
+                      <div
+                        key={value.title}
+                        className=" relative z-10 flex flex-col items-center flex-1 text-center"
+                      >
+                        <div className="w-20 h-20 lg:w-24 lg:h-24 rounded-full border border-border/10 bg-white shadow-sm flex items-center justify-center transition-all duration-300 hover:-translate-y-2 hover:border-accent hover:shadow-xl">
+                          <Icon className="w-7 h-7 lg:w-9 lg:h-9 text-muted" />
+                        </div>
+                        <p className="mt-2 lg:mt-6 text-dark-accent font-semibold text-base lg:text-lg">
+                          {value.year}
+                        </p>
+                        <p className="mt-2 text-nav text-sm lg:text-base leading-6 max-w-25 lg:max-w-30">
+                          {value.title}
+                        </p>
+                      </div>
+                    );
+                  })}
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <div className="w-full h-px bg-border/30" />
+
+*******************************************/
+
+
+
+contact butoons 
+/********************************************************
+ <div className="flex gap-4">
+              <NavLink to={"/projects"}>
+                <Button children={"Projects"} type={"primary"} />
+              </NavLink>
+              <NavLink to={"/about"}>
+                <Button children={"About me"} type={"secondary"} />
+              </NavLink>
+            </div>
+******************************************/
+
+
+
+
+
+
+
+
+
+{/* <div
+                    key={social.label}
+                    className=" flex items-start gap-5 rounded-3xl border border-border/10  bg-white/50 p-6 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:border-dark-accent/20"
+                  >
+                 
+                    <div className=" flex self-center h-14 w-14 shrink-0 items-center justify-center rounded-2xl bg-dark-accent/10 text-dark-accent">
+                      <Icon size={26} strokeWidth={2} />
+                    </div>
+
+             
+                    <div className="space-y-1">
+                      <h3 className="font-display text-xl font-semibold text-surface">
+                        {social.label}
+                      </h3>
+
+                      <a
+                        href={social.href}
+                        className=" block text-sm text-text-dim hover:text-dark-accent transition-colors break-all"
+                      >
+                        {social.href}
+                      </a>
+
+                      <p className="text-sm leading-6 text-muted">
+                        {social.text}
+                      </p>
+                    </div>
+                  </div> */}
