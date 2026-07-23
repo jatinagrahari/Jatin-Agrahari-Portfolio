@@ -28,6 +28,7 @@ import {
 export const ProjectCards = [
   {
     id: "astra",
+    featuredProject: true,
     projectStatus: "Live Demo",
     projectCategory: "Music Player",
     projectTitle: "Astra - Music Streaming Platform",
@@ -105,6 +106,7 @@ export const ProjectCards = [
     id: "thefadestore",
     projectStatus: "Live Demo",
     projectCategory: "E-Commerce store",
+    featuredProject: true,
     projectTitle: "Modern Fashion E-Commerce Experience",
     projectDescription:
       "Developed a responsive fashion e-commerce platform with dynamic product browsing, category filtering, shopping cart management, and client-side routing. Focused on reusable components, smooth shopping interactions.",
@@ -228,6 +230,7 @@ export const ProjectCards = [
     projectStatus: "Live Demo",
     projectCategory: "Task Management",
     projectTitle: "Task Management & Productivity Tracker",
+    featuredProject: true,
     projectDescription:
       "Built a responsive task management application enabling users to create, organize, update, and delete daily tasks with ease. Focused on intuitive interactions, efficient state management, and a clean interface that improves productivity across devices.",
     projectTags: [
@@ -339,6 +342,7 @@ export const ProjectCards = [
 
   {
     id: "exchangex",
+    featuredProject: true,
     projectStatus: "Live Demo",
     projectCategory: "Currency Converter",
     projectTitle: "Real-Time Currency Exchange Calculator",
@@ -447,6 +451,7 @@ export const ProjectCards = [
 
   {
     id: "vaultkey",
+    featuredProject: false,
     projectStatus: "Live Demo",
     projectCategory: "Utility Tool",
     projectTitle: "Secure Password Generator Utility",
