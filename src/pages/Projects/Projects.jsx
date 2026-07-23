@@ -13,7 +13,7 @@ const Projects = () => {
       {/* Hero Section */}
       <section className="w-full pt-32 pb-16 px-6 text-center bg-bg-dark">
         <div className="max-w-7xl mx-auto">
-          <div className="flex flex-col items-center gap-5">
+          <div className="flex flex-col items-center gap-5 transition-all duration-500 animate-fade-up">
             <span className="text-xs font-semibold tracking-widest text-dark-accent uppercase">
               Projects
             </span>
@@ -46,7 +46,6 @@ const Projects = () => {
           </div>
         </div>
       </section>
-      <div className="w-full h-px bg-border/20" />
     </div>
   );
 };
