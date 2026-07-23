@@ -13,7 +13,7 @@ const Modal = ({ image, onClose }) => {
       >
         <button
           onClick={onClose}
-          className="absolute -top-4 -right-4 flex h-10 w-10 items-center justify-center rounded-full bg-white/10 text-white backdrop-blur-md transition-all duration-300 hover:rotate-90 hover:bg-white hover:text-black"
+          className="absolute cursor-pointer -top-4 -right-4 flex h-10 w-10 items-center justify-center rounded-full bg-white/10 text-white backdrop-blur-md transition-all duration-300 hover:rotate-90 hover:bg-white hover:text-black"
         >
           <X size={20} />
         </button>

@@ -1,4 +1,3 @@
-import ampss1 from "./astra-music-player-images/ss-1.png";
 import ampss2 from "./astra-music-player-images/ss-2.png";
 import ampss3 from "./astra-music-player-images/ss-3.png";
 import ampss4 from "./astra-music-player-images/ss-4.png";
@@ -25,7 +24,6 @@ import vkpgss3 from "./vaultkey-password-generator-images/ss-3.png";
 import vkpgss4 from "./vaultkey-password-generator-images/ss-4.png";
 
 export {
-  ampss1,
   ampss2,
   ampss3,
   ampss4,

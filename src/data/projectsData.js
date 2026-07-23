@@ -1,5 +1,4 @@
 import {
-  ampss1,
   ampss2,
   ampss3,
   ampss4,
@@ -30,17 +29,13 @@ export const ProjectCards = [
   {
     projectStatus: "Live Demo",
     projectCategory: "Music Player",
-    projectTitle: "Astra Music Player",
+    projectTitle: "Astra - Music Streaming Platform",
     projectDescription:
-      "A modern music player built with React that delivers a clean, responsive, and intuitive listening experience with playlist management and smooth user interactions.",
+      "Built a responsive music streaming application featuring playlist management, intuitive navigation, seamless playback controls, and reusable React components. Designed to deliver a clean user experience while maintaining scalable architecture",
     projectTags: ["React", "Tailwind CSS", "JavaScript", "Vite"],
-    projectPrimaryButton: "View Live Demo",
+    projectPrimaryButton: "View Live",
     projectSecondaryButton: "View Case Study",
     projectImages: [
-      {
-        id: 1,
-        source: ampss1,
-      },
       {
         id: 2,
         source: ampss2,
@@ -58,10 +53,10 @@ export const ProjectCards = [
 
   {
     projectStatus: "Live Demo",
-    projectCategory: "E-Commerce",
-    projectTitle: "The Fade",
+    projectCategory: "E-Commerce store",
+    projectTitle: "Modern Fashion E-Commerce Experience",
     projectDescription:
-      "A responsive e-commerce application featuring product browsing, category filtering, shopping cart functionality, and a modern shopping experience powered by React.",
+      "Developed a responsive fashion e-commerce platform with dynamic product browsing, category filtering, shopping cart management, and client-side routing. Focused on reusable components, smooth shopping interactions.",
     projectTags: [
       "React",
       "Tailwind CSS",
@@ -69,7 +64,7 @@ export const ProjectCards = [
       "React Router",
       "FakeStore API",
     ],
-    projectPrimaryButton: "View Live Demo",
+    projectPrimaryButton: "View Live",
     projectSecondaryButton: "View Case Study",
     projectImages: [
       {
@@ -106,11 +101,17 @@ export const ProjectCards = [
   {
     projectStatus: "Live Demo",
     projectCategory: "Task Management",
-    projectTitle: "TaskFlow",
+    projectTitle: "Task Management & Productivity Tracker",
     projectDescription:
-      "A productivity-focused task management application designed to organize daily work with an intuitive interface, task tracking, and responsive user experience.",
-    projectTags: ["React", "Tailwind CSS", "JavaScript", "Local Storage"],
-    projectPrimaryButton: "View Live Demo",
+      "Built a responsive task management application enabling users to create, organize, update, and delete daily tasks with ease. Focused on intuitive interactions, efficient state management, and a clean interface that improves productivity across devices.",
+    projectTags: [
+      "React",
+      "Tailwind CSS",
+      "JavaScript",
+      "Local Storage",
+      "Redux Toolkit",
+    ],
+    projectPrimaryButton: "View Live",
     projectSecondaryButton: "View Case Study",
     projectImages: [
       {
@@ -139,11 +140,11 @@ export const ProjectCards = [
   {
     projectStatus: "Live Demo",
     projectCategory: "Currency Converter",
-    projectTitle: "ExchangeX",
+    projectTitle: "Real-Time Currency Exchange Calculator",
     projectDescription:
-      "A real-time currency converter that fetches live exchange rates and provides fast, accurate conversions through a clean and responsive interface.",
+      "Developed a real-time currency conversion application supporting multiple international currencies with accurate exchange rate calculations, intuitive user interactions, and responsive design.",
     projectTags: ["React", "Tailwind CSS", "Exchange Rate API", "JavaScript"],
-    projectPrimaryButton: "View Live Demo",
+    projectPrimaryButton: "View Live",
     projectSecondaryButton: "View Case Study",
     projectImages: [
       {
@@ -171,13 +172,14 @@ export const ProjectCards = [
 
   {
     projectStatus: "Live Demo",
-    projectCategory: "Currency Converter",
-    projectTitle: "ExchangeX",
+    projectCategory: "Utility Tool",
+    projectTitle: "Secure Password Generator Utility",
     projectDescription:
-      "A real-time currency converter that fetches live exchange rates and provides fast, accurate conversions through a clean and responsive interface.",
-    projectTags: ["React", "Tailwind CSS", "Exchange Rate API", "JavaScript"],
-    projectPrimaryButton: "View Live Demo",
+      "A responsive password generator that creates secure, customizable passwords with adjustable length and character options, helping users generate strong credentials instantly.",
+    projectTags: ["React", "Tailwind CSS", "JavaScript"],
+    projectPrimaryButton: "View Live",
     projectSecondaryButton: "View Case Study",
+
     projectImages: [
       {
         id: 1,

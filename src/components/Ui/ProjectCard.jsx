@@ -3,6 +3,7 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 import { ProjectCards } from "../../data/projectsData.js";
 import Modal from "../../components/Ui/Modal";
 import Button from "../../components/Ui/Button.jsx";
+import { NavLink } from "react-router-dom";
 
 const ProjectCard = ({ card }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -16,7 +17,10 @@ const ProjectCard = ({ card }) => {
       hover:border-dark-accent/40 hover:shadow-2xl transition-all duration-500 hover:-translate-y-1"
       >
         {/* card data */}
-        <div className="lg:col-span-6 p-6 sm:p-8 lg:p-10 flex flex-col gap-6 transition-all duration-300 border-b lg:border-b-0 lg:border-r bg-white/90 border-border/20">
+        <div
+          className="lg:col-span-6 p-6 sm:p-8 lg:p-10 flex flex-col gap-6 transition-all duration-300 border-b lg:border-b-0 
+        lg:border-r bg-white/90 border-border/20"
+        >
           <div className="flex items-center gap-2 ">
             <span className="text-[10px] font-bold tracking-widest uppercase border rounded-full px-2.5 py-1 bg-accent/10 text-accent border-accent/25">
               {card.projectStatus}
@@ -44,17 +48,24 @@ const ProjectCard = ({ card }) => {
             ))}
           </div>
           <div className="mt-auto inline-flex items-center gap-2 px-1 lg:px-5 py-2.5">
-            <Button type={"primary"} children={card.projectPrimaryButton} />
-            <Button type={"secondary"} children={card.projectSecondaryButton} />
+            <a href="" className="">
+              <Button type={"primary"} children={card.projectPrimaryButton} />
+            </a>
+            <NavLink>
+              <Button
+                type={"secondary"}
+                children={card.projectSecondaryButton}
+              />
+            </NavLink>
           </div>
         </div>
         {/* card Images */}
         <div
-          className="lg:col-span-6  p-5 md:p-8 flex flex-col justify-between gap-6
+          className="lg:col-span-6  p-5 md:p-8 flex flex-col items-center justify-center gap-6
         bg-surface-2"
         >
           {/* <div className="lg:col-span-6 p-8 "> */}
-          <div className="flex justify-center items-center pt-4 md:pt-10 ">
+          <div className="flex justify-center items-center  ">
             <div
               className="relative w-full h-full min-h-50 rounded-2xl overflow-hidden border border-white/70 shadow-lg bg-surface grow 
             flex items-center justify-center group"
@@ -73,7 +84,7 @@ const ProjectCard = ({ card }) => {
                 id={card.projectImages[image].id}
                 src={card.projectImages[image].source}
                 alt=""
-                className="transition-all duration-500 "
+                className="transition-all duration-500 group-hover:scale-[1.02]"
                 onClick={(e) => setIsOpen(true)}
               />
               <button
