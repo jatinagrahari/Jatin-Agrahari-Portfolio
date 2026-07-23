@@ -34,7 +34,9 @@ export const ProjectCards = [
       "Built a responsive music streaming application featuring playlist management, intuitive navigation, seamless playback controls, and reusable React components. Designed to deliver a clean user experience while maintaining scalable architecture",
     projectTags: ["React", "Tailwind CSS", "JavaScript", "Vite"],
     projectPrimaryButton: "View Live",
+    projectPrimaryLink: "https://astramusicplay.netlify.app/",
     projectSecondaryButton: "View Case Study",
+    projectSecondaryLink: "/projects/case-study/astra",
     projectImages: [
       {
         id: 2,
@@ -65,7 +67,9 @@ export const ProjectCards = [
       "FakeStore API",
     ],
     projectPrimaryButton: "View Live",
+    projectPrimaryLink: "https://tfadestore.netlify.app/",
     projectSecondaryButton: "View Case Study",
+    projectSecondaryLink: "/projects/case-study/thefadestore",
     projectImages: [
       {
         id: 1,
@@ -112,7 +116,9 @@ export const ProjectCards = [
       "Redux Toolkit",
     ],
     projectPrimaryButton: "View Live",
+    projectPrimaryLink: "https://taskflowtodos.netlify.app/",
     projectSecondaryButton: "View Case Study",
+    projectSecondaryLink: "/projects/case-study/taskflow",
     projectImages: [
       {
         id: 1,
@@ -145,7 +151,10 @@ export const ProjectCards = [
       "Developed a real-time currency conversion application supporting multiple international currencies with accurate exchange rate calculations, intuitive user interactions, and responsive design.",
     projectTags: ["React", "Tailwind CSS", "Exchange Rate API", "JavaScript"],
     projectPrimaryButton: "View Live",
+    projectPrimaryLink: "https://exchangexcc.netlify.app/",
     projectSecondaryButton: "View Case Study",
+    projectSecondaryLink: "/projects/case-study/exchangex",
+
     projectImages: [
       {
         id: 1,
@@ -178,7 +187,9 @@ export const ProjectCards = [
       "A responsive password generator that creates secure, customizable passwords with adjustable length and character options, helping users generate strong credentials instantly.",
     projectTags: ["React", "Tailwind CSS", "JavaScript"],
     projectPrimaryButton: "View Live",
+    projectPrimaryLink: "https://randompasswordgeneratorbyjj.netlify.app/",
     projectSecondaryButton: "View Case Study",
+    projectSecondaryLink: "/projects/case-study/vaultkey",
 
     projectImages: [
       {

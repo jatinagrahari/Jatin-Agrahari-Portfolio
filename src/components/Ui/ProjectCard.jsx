@@ -48,10 +48,10 @@ const ProjectCard = ({ card }) => {
             ))}
           </div>
           <div className="mt-auto inline-flex items-center gap-2 px-1 lg:px-5 py-2.5">
-            <a href="" className="">
+            <a href={card.projectPrimaryLink} target="_blank" className="">
               <Button type={"primary"} children={card.projectPrimaryButton} />
             </a>
-            <NavLink>
+            <NavLink to={card.projectSecondaryLink}>
               <Button
                 type={"secondary"}
                 children={card.projectSecondaryButton}

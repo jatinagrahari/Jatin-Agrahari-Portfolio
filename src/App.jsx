@@ -11,6 +11,13 @@ import Loader from "./components/Ui/Loader";
 import { Home, About, Contact, Experience, Projects } from "./pages";
 import { useState } from "react";
 import { Toaster } from "react-hot-toast";
+import {
+  AstraCaseStudy,
+  ExchangexCaseStudy,
+  TaskFlowCaseStudy,
+  TheFadeCaseStudy,
+  VaultKeyCaseStudy,
+} from "./components/case-study";
 
 function App() {
   const [isLoading, setisLoading] = useState(true);
@@ -21,6 +28,29 @@ function App() {
         <Route path="" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/projects" element={<Projects />} />
+
+        <Route path="/projects/case-study/astra" element={<AstraCaseStudy />} />
+
+        <Route
+          path="/projects/case-study/exchangex"
+          element={<ExchangexCaseStudy />}
+        />
+
+        <Route
+          path="/projects/case-study/taskflow"
+          element={<TaskFlowCaseStudy />}
+        />
+
+        <Route
+          path="/projects/case-study/thefadestore"
+          element={<TheFadeCaseStudy />}
+        />
+
+        <Route
+          path="/projects/case-study/vaultkey"
+          element={<VaultKeyCaseStudy />}
+        />
+
         <Route path="/experience" element={<Experience />} />
         <Route path="/contact" element={<Contact />} />
       </Route>,
