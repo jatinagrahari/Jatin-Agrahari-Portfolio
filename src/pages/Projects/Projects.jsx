@@ -1,63 +1,52 @@
 import React, { useState } from "react";
-import { ChevronLeft, ChevronRight } from "lucide-react";
-import redux from "../../assets/redux.png";
-import react from "../../assets/react.png";
-import nodejs from "../../assets/nodejs.png";
-import git from "../../assets/git.png";
+import ProjectCard from "../../components/Ui/ProjectCard";
+import { ProjectCards } from "../../data/projectsData.js";
 import Modal from "../../components/Ui/Modal";
+import Button from "../../components/Ui/Button.jsx";
 
 const Projects = () => {
-  const images = [
-    {
-      id: 1,
-      source: react,
-    },
-    {
-      id: 2,
-      source: redux,
-    },
-    {
-      id: 3,
-      source: nodejs,
-    },
-    {
-      id: 4,
-      source: git,
-    },
-  ];
-
-  const [isOpen, setIsOpen] = useState(false);
-  const [image, setImage] = useState(0);
+  // const [isOpen, setIsOpen] = useState(false);
+  // const [image, setImage] = useState(0);
 
   return (
-    <div className=" w-full text-center text-2xl py-10 ">
-      Hello there
-      {isOpen ? (
-        <Modal image={images[image].source} onClose={() => setIsOpen(false)} />
-      ) : null}
-      <div className="flex justify-center items-center pt-10 ">
-        <div className="flex flex-row items-center border-2 border-[#1f1f1f]/10">
-          <ChevronLeft
-            className="w-10 h-10"
-            onClick={() =>
-              image > 0 ? setImage(image - 1) : setImage(images.length - 1)
-            }
-          />
-          <img
-            id={images[image].id}
-            src={images[image].source}
-            alt=""
-            className="w-100 h-100"
-            onClick={(e) => setIsOpen(true)}
-          />
-          <ChevronRight
-            className="w-10 h-10"
-            onClick={() =>
-              image < images.length - 1 ? setImage(image + 1) : setImage(0)
-            }
-          />
+    <div className="">
+      {/* Hero Section */}
+      <section className="w-full pt-32 pb-16 px-6 text-center bg-bg-dark">
+        <div className="max-w-7xl mx-auto">
+          <div className="flex flex-col items-center gap-5">
+            <span className="text-xs font-semibold tracking-widest text-dark-accent uppercase">
+              Projects
+            </span>
+
+            <h1
+              className="text-5xl md:text-6xl font-bold text-surface leading-tight"
+              style={{ fontFamily: "Syne, sans-serif" }}
+            >
+              Projects I've
+              <br />
+              <span className="text-dark-accent">Built</span>
+            </h1>
+
+            <p className="text-base text-nav leading-relaxed max-w-5xl">
+              Every project represents an opportunity to explore new
+              technologies, strengthen problem-solving skills, and create fast,
+              accessible, and user-focused web experiences.
+            </p>
+          </div>
         </div>
-      </div>
+      </section>
+      <div className="w-full h-px bg-border/30" />
+      {/* card section */}
+      <section className="w-full py-20 px-6">
+        <div className="max-w-5xl mx-auto">
+          <div className="flex flex-col gap-6">
+            {ProjectCards.map((card) => (
+              <ProjectCard card={card} />
+            ))}
+          </div>
+        </div>
+      </section>
+      <div className="w-full h-px bg-border/20" />
     </div>
   );
 };
