@@ -2,7 +2,6 @@ import React from "react";
 import { contactInfo, Quotes } from "../../data";
 import { NavLink } from "react-router-dom";
 import { User, Mail, Tag, MessageSquare } from "lucide-react";
-import ContactSvg from "../../assets/Contactus.svg";
 import Button from "../../components/Ui/Button";
 import emailjs from "@emailjs/browser";
 import { useState } from "react";
