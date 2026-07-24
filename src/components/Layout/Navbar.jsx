@@ -2,12 +2,16 @@ import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import { navLinks } from "../../data";
 import Button from "../Ui/Button";
-import { Menu, X } from "lucide-react";
+import { Menu, X, Sun, Moon } from "lucide-react";
 import { motion } from "motion/react";
 import { siteConfig } from "../../data";
+import useTheme from "../../contexts/Theme.jsx";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const { themeMode, lightTheme, darkTheme } = useTheme();
+
+  console.log(themeMode);
 
   return (
     <div className="sticky top-0 z-50  py-4 md:py-0 glass">
@@ -33,8 +37,33 @@ const Navbar = () => {
             </NavLink>
           ))}
         </div>
-        <div className="hidden md:flex">
-          <Button children={siteConfig.ctaLabel} type={"primary"} />
+        {/* theme switcher */}
+        <div className="flex items-center gap-3">
+          <button
+            onClick={themeMode === "light" ? darkTheme : lightTheme}
+            className="relative flex h-10 w-10 items-center justify-center rounded-full border border-border/10 cursor-pointer bg-bg-dark 
+            text-surface transition-all duration-300 hover:border-dark-accent/30 hover:text-dark-accent active:scale-95"
+          >
+            <Sun
+              className={`absolute h-4 w-4 transition-all duration-300 ${
+                themeMode === "dark"
+                  ? "rotate-90 scale-0 opacity-0"
+                  : "rotate-0 scale-100 opacity-100"
+              }`}
+            />
+
+            <Moon
+              className={`absolute h-4 w-4 transition-all duration-300 ${
+                themeMode === "dark"
+                  ? "rotate-0 scale-100 opacity-100"
+                  : "-rotate-90 scale-0 opacity-0"
+              }`}
+            />
+          </button>
+
+          <div className="hidden md:block">
+            <Button type="primary">{siteConfig.ctaLabel}</Button>
+          </div>
         </div>
 
         {/* Mobile nav  */}

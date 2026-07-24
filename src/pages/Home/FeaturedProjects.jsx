@@ -180,9 +180,8 @@ const FeaturedProjects = () => {
             <NavLink
               to="/projects"
               className="inline-flex items-center gap-2 text-sm font-semibold
-                       text-accent border border-accent/30 rounded-full px-6 py-2.5
+                       text-dark-accent border border-accent/30 rounded-full px-6 py-2.5
                        hover:bg-accent hover:text-white transition-all duration-200"
-              style={{ fontFamily: "DM Sans, sans-serif" }}
             >
               View Project →
             </NavLink>

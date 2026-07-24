@@ -18,6 +18,7 @@ import {
   TheFadeCaseStudy,
   VaultKeyCaseStudy,
 } from "./components/case-study";
+import { ThemeProvider } from "./contexts/Theme.jsx";
 
 function App() {
   const [isLoading, setisLoading] = useState(true);
@@ -58,7 +59,7 @@ function App() {
   );
 
   return (
-    <>
+    <ThemeProvider>
       {isLoading ? (
         <Loader onComplete={setisLoading} />
       ) : (
@@ -77,7 +78,7 @@ function App() {
           },
         }}
       />
-    </>
+    </ThemeProvider>
   );
 }
 
