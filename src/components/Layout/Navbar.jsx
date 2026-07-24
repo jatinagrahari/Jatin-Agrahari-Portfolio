@@ -60,7 +60,9 @@ const Navbar = () => {
           </button> */}
 
           <div className="hidden md:block">
-            <Button type="primary">{siteConfig.ctaLabel}</Button>
+            <NavLink to={"/contact"}>
+              <Button type="primary">{siteConfig.ctaLabel}</Button>
+            </NavLink>
           </div>
         </div>
 
