@@ -1,83 +1,107 @@
-```md
-# Jatin Agrahari Portfolio – Frontend Developer
+<div align="center">
 
-![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
-![Vite](https://img.shields.io/badge/vite-%23646CFF.svg?style=for-the-badge&logo=vite&logoColor=white)
-![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white)
-![React Router](https://img.shields.io/badge/React_Router-CA4245?style=for-the-badge&logo=react-router&logoColor=white)
-![Framer Motion](https://img.shields.io/badge/Framer_Motion-000000?style=for-the-badge&logo=framer&logoColor=white)
+# ✨ Jatin Agrahari — Developer Portfolio
 
-A modern developer portfolio built with React, showcasing my work, skills, and selected frontend projects. The portfolio emphasizes clean design, smooth interactions, responsive layouts, and a scalable component architecture while providing an engaging experience across desktop and mobile devices.
+[![React 19](https://img.shields.io/badge/React_19-20232a?style=for-the-badge&logo=react&logoColor=61DAFB)](https://react.dev)
+[![Vite](https://img.shields.io/badge/Vite_8-646CFF?style=for-the-badge&logo=vite&logoColor=white)](https://vitejs.dev)
+[![Tailwind CSS v4](https://img.shields.io/badge/Tailwind_CSS_v4-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)](https://tailwindcss.com)
+[![React Router 7](https://img.shields.io/badge/React_Router_7-CA4245?style=for-the-badge&logo=react-router&logoColor=white)](https://reactrouter.com)
+[![Motion](https://img.shields.io/badge/Motion-000000?style=for-the-badge&logo=framer&logoColor=white)](https://motion.dev)
 
-## Live Demo
+A modern, high-performance portfolio web application engineered with **React 19**, **Vite**, **Tailwind CSS v4**, and **Motion**. Designed with a focus on fluid UI micro-interactions, responsive aesthetic excellence, dynamic case study routing, and modular frontend architecture.
 
-[Visit Portfolio](https://jatinagrahari.com)
-
-## Tech Stack
-
-| Technology            | Description                    |
-| :-------------------- | :----------------------------- |
-| **React 19**          | Component-Based UI Development |
-| **Vite**              | Fast Development & Build Tool  |
-| **Tailwind CSS**      | Utility-First Styling          |
-| **React Router**      | Client-Side Routing            |
-| **Framer Motion**     | Smooth UI Animations           |
-| **JavaScript (ES6+)** | Application Logic              |
-
-## Features
-
-- Modern responsive design
-- Smooth page transitions and animations
-- Individual project case study pages
-- Featured project showcase
-- Interactive project gallery
-- Mobile-first layout
-- Clean and reusable component architecture
-- Optimized performance
-- SEO-friendly structure
-- Fast routing with React Router
-
-## Project Architecture
-
-The portfolio follows a modular, data-driven architecture to keep components reusable and content easy to maintain.
-
-- Portfolio information is managed through centralized data files.
-- Projects are rendered dynamically using reusable components.
-- Each project contains its own lightweight case study object.
-- React Router powers individual project pages using dynamic routes.
-- Tailwind CSS provides scalable and maintainable styling.
-- Framer Motion enhances the overall user experience with subtle animations.
-
-## Featured Projects
-
-- 🛍️ **The Fade** — Modern Fashion E-Commerce
-- 🎵 **Astra Music** — Music Streaming Platform
-- ✅ **TaskFlow** — Productivity Manager
-- 💱 **ExchangeX** — Currency Dashboard
-- 🔐 **VaultKey** — Secure Password Generator
-
-## Project Highlights
-
-This portfolio was designed from the ground up to represent my current frontend development skills and coding standards.
-
-- Modern UI/UX with consistent visual language
-- Fully responsive across all devices
-- Reusable component architecture
-- Data-driven project management
-- Dynamic case study routing
-- Performance-focused implementation
-- Scalable folder structure
-- Clean, maintainable codebase
-
-## Author
-
-**JJ (Jatin Agrahari)**
-
-- **Portfolio:** https://jatinagrahari.com
-- **GitHub:** https://github.com/jatinagrahari
-- **LinkedIn:** https://linkedin.com/in/jatinagrahari
+[🚀 **View Live Demo**](https://jatinagrahari.com) • [✨ **Explore Features**](#-key-features) • [🛠️ **Tech Stack**](#-tech-stack) • [🚀 **Getting Started**](#-getting-started)
 
 ---
 
-If you enjoyed this project or found it useful, consider giving it a ⭐.
+</div>
+
+## 📖 Table of Contents
+
+- [Overview](#-overview)
+- [Key Features](#-key-features)
+- [Tech Stack](#-tech-stack)
+- [Featured Projects](#-featured-projects)
+- [Project Structure](#-project-structure)
+- [Contact & Connect](#-contact--connect)
+
+---
+
+## 🌟 Overview
+
+This portfolio is built from the ground up to showcase my skills, projects, work experience, and design philosophy. It utilizes data-driven React components, custom layout transitions powered by Motion, and a lightweight, maintainable code structure.
+
+---
+
+## ✨ Key Features
+
+- ⚡ **Lightning Fast Performance**: Powered by Vite and React 19 for instantaneous builds and quick page loads.
+- 🎨 **Modern Aesthetic & UI/UX**: Clean dark-mode inspired design, vibrant accents, glassmorphism, and seamless micro-animations.
+- 📱 **Fully Responsive Layout**: Tailored layouts providing a pristine experience across mobile, tablet, and desktop viewports.
+- 🔀 **Dynamic Client-Side Routing**: Fast page transitions using React Router v7 with dedicated project case study views.
+- 📬 **Interactive Contact Form**: Integrated with EmailJS and instant feedback notifications via `react-hot-toast`.
+- 📁 **Data-Driven Architecture**: Centralized data modules allowing effortless project additions, updates, and maintenance.
+
+---
+
+## 🛠️ Tech Stack
+
+| Technology                                                                                          | Role                                          |
+| :-------------------------------------------------------------------------------------------------- | :-------------------------------------------- |
+| **[React 19](https://react.dev/)**                                                                  | Core UI Component Framework                   |
+| **[Vite 8](https://vitejs.dev/)**                                                                   | Next-Generation Frontend Tooling & Dev Server |
+| **[Tailwind CSS v4](https://tailwindcss.com/)**                                                     | Utility-First Styling & Design System         |
+| **[React Router v7](https://reactrouter.com/)**                                                     | Client-Side Routing & Dynamic Page Rendering  |
+| **[Motion](https://motion.dev/)**                                                                   | Smooth Page Transitions & Micro-Animations    |
+| **[Lucide React](https://lucide.dev/) & [React Icons](https://react-icons.github.io/react-icons/)** | Modern Crisp UI Iconography                   |
+| **[EmailJS](https://www.emailjs.com/)**                                                             | Direct In-Browser Contact Email Delivery      |
+| **[React Hot Toast](https://react-hot-toast.com/)**                                                 | Interactive Toast Notifications               |
+| **[Swiper](https://swiperjs.com/)**                                                                 | Touch-Enabled Touch Sliders & Carousels       |
+
+---
+
+## 🚀 Featured Projects
+
+- 🛍️ **The Fade** — Modern Fashion E-Commerce Platform
+- 🎵 **Astra Music** — Music Streaming & Interactive Audio Player
+- ✅ **TaskFlow** — Streamlined Productivity & Task Manager
+- 💱 **ExchangeX** — Real-Time Currency & Financial Dashboard
+- 🔐 **VaultKey** — Secure Password & Key Generator
+
+---
+
+## 📂 Project Structure
+
+```text
+portfolio-webapp/
+├── public/              # Static assets & favicons
+├── src/
+│   ├── assets/          # Images, logos, and media files
+│   ├── components/      # Reusable UI components (Navbar, Footer, ProjectCard, etc.)
+│   ├── contexts/        # Global context providers (Theme, State)
+│   ├── data/            # Centralized project data, experiences & content
+│   ├── pages/           # Page views (Home, About, Projects, Experience, Contact)
+│   ├── utils/           # Helper functions & utility methods
+│   ├── App.jsx          # Main application component & routes
+│   ├── index.css        # Global CSS & Tailwind CSS imports
+│   └── main.jsx         # Application entry point
+├── index.html           # HTML5 template
+├── package.json         # Project dependencies & scripts
+└── vite.config.js       # Vite configuration
 ```
+
+## 👤 Contact & Connect
+
+**Jatin Agrahari (JJ)** — Frontend Developer
+
+- **Website:** [jatinagrahari.com](https://jatinagrahari.com)
+- **GitHub:** [@jatinagrahari](https://github.com/jatinagrahari)
+- **LinkedIn:** [in/jatinagrahari](https://linkedin.com/in/jatinagrahari)
+
+---
+
+<div align="center">
+
+Made with ❤️ by **Jatin Agrahari**. If you found this portfolio inspiring, please consider giving it a ⭐!
+
+</div>
