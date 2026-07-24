@@ -48,7 +48,7 @@ const About = () => {
                     );
                   })}
                 </div>
-                <a href="/resume.pdf" download>
+                <a href="/resume/JJ_resume.pdf" download>
                   <Button children={"Download resume"} type={"primary"} />
                 </a>
               </div>

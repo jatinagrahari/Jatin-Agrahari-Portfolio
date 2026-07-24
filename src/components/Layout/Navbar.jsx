@@ -5,13 +5,11 @@ import Button from "../Ui/Button";
 import { Menu, X, Sun, Moon } from "lucide-react";
 import { motion } from "motion/react";
 import { siteConfig } from "../../data";
-import useTheme from "../../contexts/Theme.jsx";
+// import useTheme from "../../contexts/Theme.jsx";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const { themeMode, lightTheme, darkTheme } = useTheme();
-
-  console.log(themeMode);
+  // const { themeMode, lightTheme, darkTheme } = useTheme();
 
   return (
     <div className="sticky top-0 z-50  py-4 md:py-0 glass">
@@ -39,7 +37,7 @@ const Navbar = () => {
         </div>
         {/* theme switcher */}
         <div className="flex items-center gap-3">
-          <button
+          {/* <button
             onClick={themeMode === "light" ? darkTheme : lightTheme}
             className="relative flex h-10 w-10 items-center justify-center rounded-full border border-border/10 cursor-pointer bg-bg-dark 
             text-surface transition-all duration-300 hover:border-dark-accent/30 hover:text-dark-accent active:scale-95"
@@ -59,7 +57,7 @@ const Navbar = () => {
                   : "-rotate-90 scale-0 opacity-0"
               }`}
             />
-          </button>
+          </button> */}
 
           <div className="hidden md:block">
             <Button type="primary">{siteConfig.ctaLabel}</Button>
