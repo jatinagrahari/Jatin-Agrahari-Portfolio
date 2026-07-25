@@ -49,14 +49,14 @@ export const siteConfig = {
       label: "LinkedIn",
       href: "https://www.linkedin.com/in/jatinagrahari/",
     },
+    {
+      label: "X",
+      href: "https://x.com/agrahari_jatin_",
+    },
     // {
-    //   label: "X",
+    //   label: "Upwork",
     //   href: "https://www.upwork.com/freelancers/~01f725fb64f435cdd9",
     // },
-    {
-      label: "Upwork",
-      href: "https://www.upwork.com/freelancers/~01f725fb64f435cdd9",
-    },
   ],
 };
 
