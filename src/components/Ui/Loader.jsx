@@ -61,7 +61,7 @@ export default function Loader({ onComplete }) {
 
         {/* tagline */}
         <div className="font-display text-center  text-xs text-muted mt-4 tracking-widest uppercase">
-          Front End Developer
+          Web Developer
         </div>
       </div>
     </div>
