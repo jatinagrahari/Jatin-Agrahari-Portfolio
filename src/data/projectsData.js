@@ -23,9 +23,135 @@ import {
   vkpgss2,
   vkpgss3,
   vkpgss4,
+  bass1,
+  bass2,
+  bass3,
+  bass4,
+  bass5,
 } from "../assets/projectsImages";
 
 export const ProjectCards = [
+  {
+    id: "blog-app",
+    featuredProject: true,
+    projectStatus: "Live Demo",
+    projectCategory: "Content Management",
+    projectTitle: "Modern Blog Publishing Platform",
+    projectDescription:
+      "Developed a full-featured blog application with secure authentication, rich text editing, image uploads, and complete CRUD functionality. Built reusable React components with Appwrite backend integration to deliver a scalable content publishing experience.",
+
+    projectTags: [
+      "React",
+      "Tailwind CSS",
+      "Appwrite",
+      "Redux Toolkit",
+      "TinyMCE",
+      "React Hook Form",
+    ],
+
+    projectPrimaryButton: "View Live",
+    projectPrimaryLink: "https://appblogstack.netlify.app",
+
+    projectSecondaryButton: "View Case Study",
+    projectSecondaryLink: "/projects/case-study/blog-app",
+
+    projectThumbnail: bass1,
+
+    caseStudySectionHeroBadge: "CONTENT MANAGEMENT SYSTEM",
+    caseStudySectionHeroTitle: "Inside Blog Platform",
+    caseStudySectionHeroDescription:
+      "Explore the complete publishing workflow, from authentication and content creation to managing articles through a modern blogging interface.",
+
+    caseStudySection: [
+      {
+        title: "Modern Landing Experience",
+        description:
+          "Designed a clean landing page introducing the blogging platform with a strong call-to-action, responsive navigation, and a minimal interface that encourages users to begin publishing or exploring articles.",
+
+        bullets: [
+          "Responsive landing page",
+          "Clear call-to-action sections",
+          "Modern navigation",
+          "Mobile-friendly layout",
+        ],
+
+        image: bass2,
+        reverse: false,
+      },
+
+      {
+        title: "Article Discovery & Reading",
+        description:
+          "Built an organized article browsing experience where users can explore published posts through responsive cards and access detailed article pages with featured images and clean typography for comfortable reading.",
+
+        bullets: [
+          "Responsive article grid",
+          "Individual article pages",
+          "Featured cover images",
+          "Optimized reading experience",
+        ],
+
+        image: bass3,
+        reverse: true,
+      },
+
+      {
+        title: "Rich Text Publishing Workflow",
+        description:
+          "Implemented a complete publishing interface using TinyMCE, allowing users to write rich content, upload featured images, generate SEO-friendly slugs, and publish articles through an intuitive workflow.",
+
+        bullets: [
+          "TinyMCE rich text editor",
+          "Image upload support",
+          "Automatic slug generation",
+          "Post publishing workflow",
+        ],
+
+        image: bass4,
+        reverse: false,
+      },
+
+      {
+        title: "Profile & Content Management",
+        description:
+          "Created a personalized dashboard where authenticated users can manage their profile, monitor published articles, and access account-related features through a clean and responsive interface powered by Appwrite.",
+
+        bullets: [
+          "Protected user dashboard",
+          "Profile management",
+          "Personal article overview",
+          "Appwrite authentication",
+        ],
+
+        image: bass5,
+        reverse: true,
+      },
+    ],
+
+    projectImages: [
+      {
+        id: 1,
+        source: bass1,
+      },
+      {
+        id: 2,
+        source: bass2,
+      },
+      {
+        id: 3,
+        source: bass3,
+      },
+      {
+        id: 4,
+        source: bass4,
+      },
+      {
+        id: 5,
+        source: bass5,
+      },
+    ],
+  },
+
   {
     id: "astra",
     featuredProject: true,

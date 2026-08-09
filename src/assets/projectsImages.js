@@ -22,6 +22,11 @@ import vkpgss1 from "./vaultkey-password-generator-images/ss-1.png";
 import vkpgss2 from "./vaultkey-password-generator-images/ss-2.png";
 import vkpgss3 from "./vaultkey-password-generator-images/ss-3.png";
 import vkpgss4 from "./vaultkey-password-generator-images/ss-4.png";
+import bass1 from "./blog-app-images/1.png";
+import bass2 from "./blog-app-images/2.png";
+import bass3 from "./blog-app-images/3.png";
+import bass4 from "./blog-app-images/4.png";
+import bass5 from "./blog-app-images/5.png";
 
 export {
   ampss2,
@@ -48,4 +53,9 @@ export {
   vkpgss2,
   vkpgss3,
   vkpgss4,
+  bass1,
+  bass2,
+  bass3,
+  bass4,
+  bass5,
 };
