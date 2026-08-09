@@ -18,6 +18,7 @@ import {
   TheFadeCaseStudy,
   VaultKeyCaseStudy,
 } from "./components/case-study";
+import BlogCaseStudy from "./components/case-study/BlogCaseStudy";
 
 function App() {
   const [isLoading, setisLoading] = useState(true);
@@ -44,6 +45,11 @@ function App() {
         <Route
           path="/projects/case-study/thefadestore"
           element={<TheFadeCaseStudy />}
+        />
+
+        <Route
+          path="/projects/case-study/blogapp"
+          element={<BlogCaseStudy />}
         />
 
         <Route

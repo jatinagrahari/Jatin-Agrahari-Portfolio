@@ -32,7 +32,7 @@ import {
 
 export const ProjectCards = [
   {
-    id: "blog-app",
+    id: "blog",
     featuredProject: true,
     projectStatus: "Live Demo",
     projectCategory: "Content Management",
@@ -53,7 +53,7 @@ export const ProjectCards = [
     projectPrimaryLink: "https://appblogstack.netlify.app",
 
     projectSecondaryButton: "View Case Study",
-    projectSecondaryLink: "/projects/case-study/blog-app",
+    projectSecondaryLink: "/projects/case-study/blogapp",
 
     projectThumbnail: bass1,
 
