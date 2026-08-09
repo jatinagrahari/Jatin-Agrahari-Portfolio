@@ -142,7 +142,7 @@ const CaseStudy = ({ card }) => {
                     {sec.bullets.map((b) => (
                       <li key={b} className="flex items-start gap-2.5">
                         <span
-                          className="flex-shrink-0 w-4 h-4 rounded-full bg-accent/15
+                          className="shrink-0 w-4 h-4 rounded-full bg-accent/15
                                      flex items-center justify-center mt-0.5"
                         >
                           <svg

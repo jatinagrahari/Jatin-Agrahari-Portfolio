@@ -11,11 +11,20 @@ const ProjectCard = ({ card }) => {
 
   return (
     <>
-      <div
+      {/* <div
         key={card.projectTitle}
         className="group grid grid-cols-1 lg:grid-cols-12 gap-0 bg-bg-dark border border-border/20 rounded-3xl overflow-hidden
       hover:border-dark-accent/40 hover:shadow-2xl transition-all duration-500 hover:-translate-y-1"
+      > */}
+      <div
+        key={card.projectTitle}
+        className="group flex flex-col-reverse w-full max-w-152 bg-bg-dark border border-border/20 rounded-3xl overflow-hidden transition-all duration-300 hover:border-dark-accent/40 hover:shadow-xl hover:border-dark-accent/40  "
       >
+        {/* <div
+        key={card.projectTitle}
+        className="flex flex-col-reverse w-150 flex-wrap gap-0 bg-bg-dark border border-border/20 rounded-3xl overflow-hidden
+      hover:border-dark-accent/40 hover:shadow-2xl transition-all duration-500 hover:-translate-y-1"
+      > */}
         {/* card data */}
         <div
           className="lg:col-span-6 p-6 sm:p-8 lg:p-10 flex flex-col gap-6 transition-all duration-300 border-b lg:border-b-0 
@@ -59,12 +68,12 @@ const ProjectCard = ({ card }) => {
             </NavLink>
           </div>
         </div>
+
         {/* card Images */}
         <div
           className="lg:col-span-6  p-5 md:p-8 flex flex-col items-center justify-center gap-6
         bg-surface-2"
         >
-          {/* <div className="lg:col-span-6 p-8 "> */}
           <div className="flex justify-center items-center  ">
             <div
               className="relative w-full h-full min-h-50 rounded-2xl overflow-hidden border border-white/70 shadow-lg bg-surface grow 

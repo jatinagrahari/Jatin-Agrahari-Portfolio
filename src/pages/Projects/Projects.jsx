@@ -38,8 +38,8 @@ const Projects = () => {
       <div className="w-full h-px bg-border/30" />
       {/* card section */}
       <section className="w-full py-20 px-6">
-        <div className="max-w-5xl mx-auto">
-          <div className="flex flex-col gap-6">
+        <div className="max-w-7xl mx-auto">
+          <div className="flex flex-col md:flex-row flex-wrap gap-6">
             {ProjectCards.map((card) => (
               <ProjectCard card={card} />
             ))}
