@@ -11,6 +11,8 @@ import toast from "react-hot-toast";
 const Contact = () => {
   let randomNumber = Math.floor(Math.random() * 10) + 1;
   const quote = Quotes[randomNumber];
+  const [sendMessageText, setsendMessageText] = useState("Send Message →");
+  const [isSubmitting, setisSubmitting] = useState(false);
 
   const [formData, setFormData] = useState({
     name: "",
@@ -25,9 +27,11 @@ const Contact = () => {
 
   async function handleSubmit(e) {
     e.preventDefault();
+    setisSubmitting(true);
+    setsendMessageText("Message Sending ...");
+
     try {
       const response = await sendEmail(formData);
-
       toast.success("Message sent successfully!");
       setFormData({
         name: "",
@@ -35,10 +39,13 @@ const Contact = () => {
         subject: "",
         message: "",
       });
-      console.log("Reset requested");
+      setisSubmitting(false);
+      setsendMessageText("Send Message →");
     } catch (error) {
       console.error(error);
       toast.error("Failed to send message. Please try again.");
+      setisSubmitting(false);
+      setsendMessageText("Send Message →");
     }
   }
 
@@ -147,16 +154,21 @@ const Contact = () => {
                   value={formData.message}
                   onChange={handleChange}
                   placeholder="Your Message"
-                  className="w-full min-h-[180px] sm:min-h-[220px] rounded-xl border border-gray-200 bg-white pl-11 pr-4 pt-4 text-sm sm:text-base outline-none resize-none transition-all duration-300 focus:border-green-600 focus:ring-4 focus:ring-green-100"
+                  className="w-full min-h-45 sm:min-h-55 rounded-xl border border-gray-200 bg-white pl-11 pr-4 pt-4 text-sm sm:text-base outline-none resize-none transition-all duration-300 focus:border-green-600 focus:ring-4 focus:ring-green-100"
                 />
               </div>
 
               {/* Button */}
               <button
                 type="submit"
-                className="w-full sm:w-auto h-12 sm:h-14 px-8 rounded-xl bg-dark-accent text-white font-medium transition-all duration-300 cursor-pointer hover:bg-accent active:scale-95"
+                disabled={isSubmitting}
+                className={`w-full sm:w-auto h-12 sm:h-14 px-8 rounded-xl bg-dark-accent text-white font-medium transition-all duration-300 cursor-pointer hover:bg-accent active:scale-95 ${
+                  isSubmitting
+                    ? "cursor-not-allowed opacity-50"
+                    : "cursor-pointer hover:bg-accent active:scale-95"
+                } `}
               >
-                Send Message →
+                {sendMessageText}
               </button>
             </form>
           </div>
