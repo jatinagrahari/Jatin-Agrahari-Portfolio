@@ -27,6 +27,21 @@ const Contact = () => {
 
   async function handleSubmit(e) {
     e.preventDefault();
+
+    if (!formData.name.trim()) {
+      toast.error("Please Fill the Name.");
+      return;
+    } else if (!formData.email.trim()) {
+      toast.error("Please Fill the Email.");
+      return;
+    } else if (!formData.subject.trim()) {
+      toast.error("Please Fill the Subject.");
+      return;
+    } else if (!formData.message.trim()) {
+      toast.error("Please Fill the Message.");
+      return;
+    }
+
     setisSubmitting(true);
     setsendMessageText("Message Sending ...");
 
