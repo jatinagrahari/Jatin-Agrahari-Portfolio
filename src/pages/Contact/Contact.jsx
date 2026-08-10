@@ -10,7 +10,7 @@ import toast from "react-hot-toast";
 
 const Contact = () => {
   let randomNumber = Math.floor(Math.random() * 10) + 1;
-  const quote = Quotes[randomNumber];
+  const [quote] = useState(Quotes[randomNumber]);
   const [sendMessageText, setsendMessageText] = useState("Send Message →");
   const [isSubmitting, setisSubmitting] = useState(false);
 
