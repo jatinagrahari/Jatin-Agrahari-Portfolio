@@ -44,7 +44,7 @@ const Experience = () => {
                         ${exp.type === "self" ? "text-dark-accent" : "text-nav"}`}
                         style={{ fontFamily: "DM Sans, sans-serif" }}
                       >
-                        {exp.company}
+                        {`${exp.company}  ( ${exp.type} ) `}
                       </p>
                       <p
                         className="text-xs text-text-dim mt-0.5"
